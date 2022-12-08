@@ -15,3 +15,44 @@ Write a README with the description of your project
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 GitHub
 *There should be one project repository per group. If you and your partner have a repository with the same name in both your accounts, you risk a 0% score. Add your partner as a collaborator. *
+
+
+tasks
+0Write a beautiful code that passes the Betty checks
+
+1Write a UNIX command line interpreter.
+
+Usage: simple_shell
+Your Shell should:
+
+Display a prompt and wait for the user to type a command. A command line always ends with a new line.
+The prompt is displayed again each time a command has been executed.
+The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+The command lines are made only of one word. No arguments will be passed to programs.
+If an executable cannot be found, print an error message and display the prompt again.
+Handle errors.
+You have to handle the “end of file” condition (Ctrl+D)
+You don’t have to:
+
+use the PATH
+implement built-ins
+handle special characters : ", ', `, \, *, &, #
+be able to move the cursor
+handle commands with arguments
+execve will be the core part of your Shell, don’t forget to pass the environ to it…
+2Simple shell 0.1 +
+
+Handle command lines with arguments
+4Simple shell 0.3 +
+
+Implement the exit built-in, that exits the shell
+Usage: exit
+You don’t have to handle any argument to the built-in exit
+
+3Simple shell 0.2 +
+
+Handle the PATH
+fork must not be called if the command doesn’t exist
+5Simple shell 0.4 +
+
+Implement the env built-in, that prints the current environment
